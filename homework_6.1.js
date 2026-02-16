@@ -26,7 +26,7 @@ function checkProbabilityTheory(count) {
         odd: oddCounter,
         evenPercent: evenPercent.toFixed(2) + '%',        
         oddPercent: oddPercent.toFixed(2) + '%',
-        difference: Math.abs(evenPercent - 50).toFixed(2)
+        difference: Math.abs(evenPercent - 50).toFixed(2) // тут мається на увазі на який відсоток відхилення у відновшенні до 50%/50%
     }
 }
 
@@ -36,4 +36,4 @@ console.log(`Кількість парних чисел: ${result.even}`);
 console.log(`Кількість непарних чисел: ${result.odd}`);
 console.log(`Відсоток парних чисел: ${result.evenPercent}`);
 console.log(`Відсоток непарних чисел: ${result.oddPercent}`);
-console.log(`Співвідношення парних до непарних чисел: ${result.difference}%`);
+console.log(`% відхлення парних до непарних чисел: ${result.difference}%`);
